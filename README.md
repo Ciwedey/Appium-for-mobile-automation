@@ -1,4 +1,4 @@
-# Mobile Automation in real device using Appium
+# Mobile automation in real device using Appium
 
 ## TOOLS :
 1. Ruby (I used v.2.5.1)
@@ -40,6 +40,11 @@
    1. Download and run Appium installation in (https://github.com/appium/appium-desktop/releases/tag/1.7.0)
    2. Or you can Install Node.js first (https://nodejs.org/en/) and then open command prompt, type "npm install -g appium" then press enter.
    
+## Android device setting :
+   1. Set android developer option on.
+   2. Set USB debugging on.
+   3. Install via USB on.
+   
 ## Run the Automation:
    1. Open atom text editor write the script and saved it
    2. Open Appium and start the server
@@ -47,13 +52,13 @@
    3. Type cucumber
           
 ## Capabilities Setup:
-            platformName:'android',
-            deviceName:'your device name',
-            platformVersion:'your device version',
-            udid:'Your unique device identifier of the connected physical device',
-            appActivity:'.HomeActivity',
-            appPackage:'Android app you want to run ex.com.example.android.myApp',
-            newCommandTimeout:'How long (in seconds) Appium will wait for a new command'
+      platformName:'android',
+      deviceName:'your device name',
+      platformVersion:'your device version',
+      udid:'Your unique device identifier of the connected physical device',
+      appActivity:'.HomeActivity',
+      appPackage:'Android app you want to run ex.com.example.android.myApp',
+      newCommandTimeout:'How long (in seconds) Appium will wait for a new command'
             
  ### Getting udid by type in command promt:
      'adb devices'
@@ -69,6 +74,6 @@
      dumpsys window windows | grep -E ‘mCurrentFocus’
    Then you can find the appPackage and appActivity
    
-   
+ 
     
       
