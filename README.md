@@ -65,14 +65,14 @@
             
  ### Getting appPackage :
    
-   Type in command promt:
+   1. Type in command promt:
 
      'adb shell'
-   Then open your apps for which you want to find the appPackage.
-   Now run this command:
+   2. Then open your apps for which you want to find the appPackage.
+   3. Now run this command:
   
      dumpsys window windows | grep -E ‘mCurrentFocus’
-   Then you can find the appPackage and appActivity
+   4. Then you can find the appPackage and appActivity
    
  
     
